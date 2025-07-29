@@ -71,7 +71,7 @@
       <a href="#"><i class="fas fa-id-badge nav-icon"></i> Employee Gatepass</a>
       <a href="#"><i class="fas fa-user-check nav-icon"></i> Visitor Check-in</a>
       <a href="asset_management.php"><i class="fas fa-boxes nav-icon"></i> Asset Management</a>
-      <a href="#"><i class="fas fa-users-cog nav-icon"></i> User Management</a>
+      <a href="user_management.php"><i class="fas fa-users-cog nav-icon"></i> User Management</a>
       <a href="gate-log.php"><i class="fas fa-file-alt nav-icon"></i> Gate Logs</a>
       <a href="#"><i class="fas fa-bell nav-icon"></i> Notifications</a>
       <a href="#"><i class="fas fa-cog nav-icon"></i> Settings</a>

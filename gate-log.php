@@ -38,6 +38,7 @@ $result = $conn->query($query);
 <head>
   <meta charset="UTF-8">
   <title>Gate Logs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
@@ -70,12 +71,19 @@ $result = $conn->query($query);
       background-color: white;
       border-bottom: 1px solid #dee2e6;
     }
+    .welcome {
+      background: linear-gradient(90deg, #0062cc, #0056b3);
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
     .form-section {
       background: white;
       padding: 20px;
       border-radius: 8px;
       margin-bottom: 20px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
   </style>
 </head>
@@ -89,8 +97,8 @@ $result = $conn->query($query);
     <a href="#"><i class="fas fa-id-badge nav-icon"></i> Employee Gatepass</a>
     <a href="#"><i class="fas fa-user-check nav-icon"></i> Visitor Check-in</a>
     <a href="asset_management.php"><i class="fas fa-boxes nav-icon"></i> Asset Management</a>
-    <a href="#"><i class="fas fa-users-cog nav-icon"></i> User Management</a>
-    <a href="gate-log.php" class="active"><i class="fas fa-file-alt nav-icon"></i> Gate Logs</a>
+    <a href="user_management.php"><i class="fas fa-users-cog nav-icon"></i> User Management</a>
+    <a href="#" class="active"><i class="fas fa-file-alt nav-icon"></i> Gate Logs</a>
     <a href="#"><i class="fas fa-bell nav-icon"></i> Notifications</a>
     <a href="#"><i class="fas fa-cog nav-icon"></i> Settings</a>
     <div class="mt-4">
@@ -102,8 +110,9 @@ $result = $conn->query($query);
 
   <!-- Main Content -->
   <div class="flex-grow-1">
+    <!-- Top Bar -->
     <div class="top-bar">
-      <h5 class="mb-0">Gate Logs</h5>
+      <input type="text" class="form-control w-50" placeholder="Search gate logs...">
       <div>
         <i class="fas fa-bell"></i> <span class="badge bg-danger">3</span>
         <span class="ms-3">John Admin</span>
@@ -112,7 +121,13 @@ $result = $conn->query($query);
     </div>
 
     <div class="container mt-4">
-      <!-- Log Entry Form -->
+      <!-- Welcome -->
+      <div class="welcome">
+        <h2>Gate Logs</h2>
+        <p>Track all gate entries and exits for employees and visitors</p>
+      </div>
+
+      <!-- Add Gate Log Form -->
       <div class="form-section">
         <h5>Add Gate Log</h5>
         <form method="POST" class="row g-3">
@@ -199,5 +214,6 @@ $result = $conn->query($query);
     </div>
   </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
