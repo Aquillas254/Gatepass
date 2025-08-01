@@ -95,7 +95,6 @@
     <a href="asset_management.php"><i class="fas fa-boxes nav-icon"></i> Asset Management</a>
     <a href="#" class="active"><i class="fas fa-users-cog nav-icon"></i> User Management</a>
     <a href="gate-log.php"><i class="fas fa-file-alt nav-icon"></i> Gate Logs</a>
-    <a href="#"><i class="fas fa-bell nav-icon"></i> Notifications</a>
     <a href="#"><i class="fas fa-cog nav-icon"></i> Settings</a>
     <div class="mt-4">
       <div class="fw-bold">John Admin</div>
