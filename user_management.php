@@ -122,7 +122,7 @@
           <h2>User Management</h2>
           <p>Manage registered users and their assigned assets</p>
         </div>
-        <button class="btn btn-light text-primary">+ Add User</button>
+       <button class="btn btn-light text-primary" onclick="window.location.href='qrtest.php'">+ Add User</button>
       </div>
 
       <!-- Stats (Optional Static for Now) -->
